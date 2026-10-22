@@ -151,16 +151,14 @@ It is not a complete account archive supplied by Granola.
 
 ```sh
 uv sync
-uv run pytest
 uv run ruff check .
 uv run ruff format --check .
 uv build
 ```
 
-Tests use synthetic data and a mocked HTTP transport. No credentials or real
-meeting data are required or included. The reference exporter informed the API
-coverage; current shared-document, batch, folder, diarization, and authentication
-behavior was also checked against the installed desktop client's code.
+The reference exporter informed the API coverage; current shared-document,
+batch, folder, diarization, and authentication behavior was also checked against
+the installed desktop client's code.
 
 The desktop-auth flow and a full own/shared/folder export were verified live on
-macOS with Granola Desktop 7.595.3. Tests also cover Python 3.11 and 3.14.
+macOS with Granola Desktop 7.595.3.

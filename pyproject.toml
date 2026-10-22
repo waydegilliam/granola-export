@@ -14,13 +14,10 @@ dependencies = ["httpx>=0.28,<1"]
 granola-export = "granola_export.cli:main"
 
 [dependency-groups]
-dev = ["pytest>=8", "ruff>=0.11"]
+dev = ["ruff>=0.11"]
 
 [tool.ruff]
 line-length = 100
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
